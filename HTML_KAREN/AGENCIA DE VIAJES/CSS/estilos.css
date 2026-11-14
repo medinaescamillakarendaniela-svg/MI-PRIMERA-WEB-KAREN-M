@@ -1,0 +1,120 @@
+/* ===== Paleta rosada y blanca ===== */
+:root {
+  --rosado-claro: #fde4ec;
+  --rosado: #f8bbd0;
+  --rosado-medio: #f48fb1;
+  --rosado-fuerte: #ec407a;
+  --blanco: #ffffff;
+  --texto: #4a2c3a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: var(--rosado-claro);
+  color: var(--texto);
+  line-height: 1.6;
+}
+
+/* ===== Encabezado ===== */
+header {
+  background-color: var(--rosado-medio);
+  color: var(--blanco);
+  text-align: center;
+  padding: 30px 20px;
+}
+
+/* ===== Menú de navegación ===== */
+nav {
+  background-color: var(--blanco);
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 12px;
+  box-shadow: 0 2px 6px rgba(236, 64, 122, 0.2);
+}
+
+nav a {
+  color: var(--rosado-fuerte);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background-color: var(--rosado-fuerte);
+  color: var(--blanco);
+}
+
+/* ===== Contenido principal ===== */
+main {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+h1, h2, h3 {
+  color: var(--rosado-fuerte);
+}
+
+/* ===== Tarjetas ===== */
+.tarjeta {
+  background-color: var(--blanco);
+  border: 2px solid var(--rosado);
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(244, 143, 177, 0.3);
+}
+
+/* ===== Botones ===== */
+button,
+.boton {
+  background-color: var(--rosado-fuerte);
+  color: var(--blanco);
+  border: none;
+  padding: 10px 22px;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover,
+.boton:hover {
+  background-color: var(--rosado-medio);
+  transform: scale(1.05);
+}
+
+/* ===== Formularios ===== */
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 2px solid var(--rosado);
+  border-radius: 10px;
+  background-color: var(--blanco);
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--rosado-fuerte);
+}
+
+/* ===== Pie de página ===== */
+footer {
+  background-color: var(--rosado-medio);
+  color: var(--blanco);
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
